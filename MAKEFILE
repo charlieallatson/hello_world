@@ -45,7 +45,7 @@ package: check
 
 publish: package 
 	@echo "\nPackaging complete... Uploading to PyPi..."
-	twine upload --sign dist/*
+	twine upload dist/*
 
 docs: clean
 	$(MAKE) -C docs html
