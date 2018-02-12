@@ -16,7 +16,7 @@ all:
 clean:
 	rm -rf build
 	rm -rf dist
-	rm -rf numberwang.egg-info
+	rm -rf hello.egg-info
 	rm -rf .coverage
 	rm -rf .tox
 	rm -rf docs/_build
@@ -35,7 +35,7 @@ test: clean
 	py.test
 
 coverage: clean
-	py.test --cov-report term-missing --cov=numberwang tests/
+	py.test --cov-report term-missing --cov=hello tests/
 
 check: clean pep8 pyflakes coverage
 
